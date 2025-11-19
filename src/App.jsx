@@ -14,7 +14,6 @@ export default function App() {
   return (
     <CartProvider>
       <Navbar />
-      <main className="main-content">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
@@ -23,7 +22,6 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<CartPage />} />
       </Routes>
-      </main>
       <Footer />
     </CartProvider>
   );
