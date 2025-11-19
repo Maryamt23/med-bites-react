@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Maryamt23/med-bites-react.git/static/css/main.adff8fd3.css",
+    "main.js": "/Maryamt23/med-bites-react.git/static/js/main.dad30769.js",
+    "static/media/banner.jpg": "/Maryamt23/med-bites-react.git/static/media/banner.eee777912f7dc22b7a02.jpg",
+    "index.html": "/Maryamt23/med-bites-react.git/index.html",
+    "main.adff8fd3.css.map": "/Maryamt23/med-bites-react.git/static/css/main.adff8fd3.css.map",
+    "main.dad30769.js.map": "/Maryamt23/med-bites-react.git/static/js/main.dad30769.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.adff8fd3.css",
+    "static/js/main.dad30769.js"
+  ]
+}
