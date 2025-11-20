@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/med-bites-react/static/css/main.1f9ba4e8.css",
-    "main.js": "/med-bites-react/static/js/main.dad30769.js",
+    "main.js": "/med-bites-react/static/js/main.542a963e.js",
     "static/media/banner.jpg": "/med-bites-react/static/media/banner.eee777912f7dc22b7a02.jpg",
     "index.html": "/med-bites-react/index.html",
     "main.1f9ba4e8.css.map": "/med-bites-react/static/css/main.1f9ba4e8.css.map",
-    "main.dad30769.js.map": "/med-bites-react/static/js/main.dad30769.js.map"
+    "main.542a963e.js.map": "/med-bites-react/static/js/main.542a963e.js.map"
   },
   "entrypoints": [
     "static/css/main.1f9ba4e8.css",
-    "static/js/main.dad30769.js"
+    "static/js/main.542a963e.js"
   ]
 }
