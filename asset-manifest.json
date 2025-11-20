@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Maryamt23/med-bites-react.git/static/css/main.adff8fd3.css",
-    "main.js": "/Maryamt23/med-bites-react.git/static/js/main.dad30769.js",
-    "static/media/banner.jpg": "/Maryamt23/med-bites-react.git/static/media/banner.eee777912f7dc22b7a02.jpg",
-    "index.html": "/Maryamt23/med-bites-react.git/index.html",
-    "main.adff8fd3.css.map": "/Maryamt23/med-bites-react.git/static/css/main.adff8fd3.css.map",
-    "main.dad30769.js.map": "/Maryamt23/med-bites-react.git/static/js/main.dad30769.js.map"
+    "main.css": "/med-bites-react/static/css/main.1f9ba4e8.css",
+    "main.js": "/med-bites-react/static/js/main.dad30769.js",
+    "static/media/banner.jpg": "/med-bites-react/static/media/banner.eee777912f7dc22b7a02.jpg",
+    "index.html": "/med-bites-react/index.html",
+    "main.1f9ba4e8.css.map": "/med-bites-react/static/css/main.1f9ba4e8.css.map",
+    "main.dad30769.js.map": "/med-bites-react/static/js/main.dad30769.js.map"
   },
   "entrypoints": [
-    "static/css/main.adff8fd3.css",
+    "static/css/main.1f9ba4e8.css",
     "static/js/main.dad30769.js"
   ]
 }
