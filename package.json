@@ -1,7 +1,7 @@
 {
   "name": "med-bites-react",
   "version": "0.1.0",
-  "homepage": "https://github.com/Maryamt23/med-bites-react.git",
+  "homepage": "https://maryamt23.github.io/med-bites-react",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
