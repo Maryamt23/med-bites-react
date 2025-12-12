@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
+import { API_BASE } from "../config";
 
 const CartContext = createContext();
 
@@ -22,7 +23,20 @@ export function CartProvider({ children }) {
 
   useEffect(() => {
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
-  }, [cart]);
+    // save to backend if sessionId exists
+    const sessionId = sessionStorage.getItem('sessionId') || (() => {
+      const id = 'sess_' + Math.random().toString(36).slice(2,9);
+      sessionStorage.setItem('sessionId', id);
+      return id;
+    })();
+  
+    // fire-and-forget
+    fetch(`${API_BASE}/api/cart/${sessionId}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ items: cart })
+    }).catch(()=>{});
+  }, [cart]);  
 
   function addItem(name, price, qty = 1) {
     setCart(prev => {

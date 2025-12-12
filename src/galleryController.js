@@ -25,7 +25,6 @@ export function initGallery() {
   
     setTimeout(() => show(0), 50);
   
-    // cleanup function
     return () => {
       clearInterval(interval);
       window.removeEventListener('galleryNext', onNext);
