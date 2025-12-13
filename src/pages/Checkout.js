@@ -1,4 +1,3 @@
-// src/pages/Checkout.js
 import React, { useState } from "react";
 import { useCart } from "../cart/cartContext";
 import { placeOrder } from "../api";

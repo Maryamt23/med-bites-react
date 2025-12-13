@@ -1,10 +1,9 @@
-// src/pages/Menu.js
 import React, { useEffect, useState } from "react";
 import { fetchMenu } from "../api";
 import { useCart } from "../cart/cartContext";
 
 export default function Menu() {
-  const [menu, setMenu] = useState(null); // null = loading, [] = no items
+  const [menu, setMenu] = useState(null); 
   const { addItem } = useCart();
 
   useEffect(() => {
@@ -43,7 +42,6 @@ export default function Menu() {
     );
   }
 
-  // Group by category
   const appetizers = menu.filter((m) => m.category?.toLowerCase() === "appetizer");
   const entrees = menu.filter((m) => m.category?.toLowerCase() === "entree");
 
@@ -60,7 +58,6 @@ export default function Menu() {
             </tr>
           </thead>
           <tbody>
-            {/* Appetizers */}
             {appetizers.length > 0 && (
               <>
                 <tr>
@@ -94,7 +91,6 @@ export default function Menu() {
               </>
             )}
 
-            {/* Entrees */}
             {entrees.length > 0 && (
               <>
                 <tr>

@@ -1,4 +1,3 @@
-// server/seed.js
 require('dotenv').config();
 const mongoose = require('mongoose');
 const MenuItem = require('./models/MenuItem');
@@ -6,14 +5,12 @@ const MenuItem = require('./models/MenuItem');
 const MONGODB_URI = process.env.MONGODB_URI;
 
 const items = [
-  // Appetizers (images correspond to files you already have in public/images)
   { name: "Hummus", price: 4.39, description: "Creamy chickpea dip", category: "Appetizer", image: "/images/image1.jpg" },
   { name: "Baba Ganoush", price: 5.59, description: "Smoky mashed eggplant", category: "Appetizer", image: "/images/image2.jpg" },
   { name: "Green Salad", price: 6.99, description: "Fresh greens with house dressing", category: "Appetizer", image: "/images/image3.jpg" },
   { name: "Fries", price: 4.99, description: "Crispy fries", category: "Appetizer", image: "/images/image4.jpg" },
   { name: "Tahini", price: 2.99, description: "Sesame tahini sauce", category: "Appetizer", image: "/images/image5.jpg" },
 
-  // Entrees
   { name: "Grilled Chicken", price: 18.00, description: "Marinated grilled chicken", category: "Entree", image: "/images/image6.jpg" },
   { name: "Beef Shawarma", price: 10.99, description: "Thinly sliced beef with spices", category: "Entree", image: "/images/image7.jpg" },
   { name: "Chicken Shawarma", price: 9.99, description: "Juicy chicken shawarma", category: "Entree", image: "/images/image8.jpg" },
