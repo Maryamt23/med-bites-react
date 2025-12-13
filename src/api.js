@@ -1,4 +1,3 @@
-// src/api.js
 import { API_BASE } from "./config";
 
 export async function fetchMenu() {

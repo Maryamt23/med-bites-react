@@ -72,7 +72,7 @@ export default function Menu() {
                       <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
                         {item.image && (
                           <img
-                            src={process.env.PUBLIC_URL + item.image}
+                            src={item.image}
                             alt={item.name}
                             style={{ width: 60, height: 40, objectFit: "cover", borderRadius: 6 }}
                           />
@@ -106,7 +106,7 @@ export default function Menu() {
                       <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
                         {item.image && (
                           <img
-                            src={process.env.PUBLIC_URL + item.image}
+                            src={item.image}
                             alt={item.name}
                             style={{ width: 60, height: 40, objectFit: "cover", borderRadius: 6 }}
                           />
