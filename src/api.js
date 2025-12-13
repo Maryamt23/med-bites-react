@@ -2,19 +2,19 @@
 import { API_BASE } from "./config";
 
 export async function fetchMenu() {
-  const res = await fetch(`${API_BASE}/api/menu`);
+  const res = await fetch(`${API_BASE}/menu`);
   if (!res.ok) throw new Error("Failed to fetch menu");
   return res.json();
 }
 
 export async function getCart(sessionId) {
-  const res = await fetch(`${API_BASE}/api/cart/${sessionId}`);
+  const res = await fetch(`${API_BASE}/cart?sessionId=${sessionId}`);
   if (!res.ok) return [];
   return res.json();
 }
 
 export async function saveCart(sessionId, items) {
-  const res = await fetch(`${API_BASE}/api/cart/${sessionId}`, {
+  const res = await fetch(`${API_BASE}/cart?sessionId=${sessionId}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ items })
@@ -23,7 +23,7 @@ export async function saveCart(sessionId, items) {
 }
 
 export async function placeOrder(orderData) {
-  const res = await fetch(`${API_BASE}/api/orders`, {
+  const res = await fetch(`${API_BASE}/orders`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(orderData)

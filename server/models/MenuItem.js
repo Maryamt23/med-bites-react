@@ -8,4 +8,4 @@ const MenuItemSchema = new mongoose.Schema({
   image: String // store path or URL
 });
 
-module.exports = mongoose.model('MenuItem', MenuItemSchema);
+module.exports = mongoose.models.MenuItem || mongoose.model("MenuItem", MenuItemSchema);
